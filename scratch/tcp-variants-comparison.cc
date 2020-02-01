@@ -203,21 +203,21 @@ TraceNextRx (std::string &next_rx_seq_file_name)
 
 int main (int argc, char *argv[])
 {
-  std::string transport_prot = "TcpBbr";
+  std::string transport_prot = "TcpBic";
   double error_p = 0.0;
-  std::string bandwidth = "2Mbps";
-  std::string delay = "0.01ms";
-  std::string access_bandwidth = "10Mbps";
+  std::string bandwidth = "20Mbps";
+  std::string delay = "10ms";
+  std::string access_bandwidth = "40Mbps";
   std::string access_delay = "45ms";
   bool tracing = false;
   std::string prefix_file_name = "TcpVariantsComparison";
   double data_mbytes = 0;
-  uint32_t mtu_bytes = 400;
+  uint32_t mtu_bytes = 1500;
   uint16_t num_flows = 1;
-  float duration = 100;
+  float duration = 300;
   uint32_t run = 0;
   bool flow_monitor = false;
-  bool pcap = false;
+  bool pcap = true;
   bool sack = true;
   std::string queue_disc_type = "ns3::PfifoFastQueueDisc";
 
@@ -274,6 +274,8 @@ int main (int argc, char *argv[])
   Config::SetDefault ("ns3::TcpSocket::RcvBufSize", UintegerValue (1 << 21));
   Config::SetDefault ("ns3::TcpSocket::SndBufSize", UintegerValue (1 << 21));
   Config::SetDefault ("ns3::TcpSocketBase::Sack", BooleanValue (sack));
+
+  Config::SetDefault ("ns3::TcpSocket::InitialCwnd", UintegerValue(10));
 
   // Select TCP variant
   if (transport_prot.compare ("ns3::TcpWestwoodPlus") == 0)

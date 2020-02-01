@@ -1,10 +1,10 @@
 import tensorflow as tf
 
-input_size = 1
+input_size = 2
 output_size = 3
 numOfHidden = 10
 
-layer = (30, 40, 50, 40, 30)
+layer = (50, 40, 30)
 
 W = list()
 #W.extend([1,len(layer)+2])

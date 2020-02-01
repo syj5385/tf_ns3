@@ -1,13 +1,13 @@
-# project ns (3.27) configured on Sat Feb  1 14:47:14 2020 by
+# project ns (3.27) configured on Sat Feb  1 15:31:48 2020 by
 # waf 1.8.19 (abi 98, python 2070ff0 on linux2)
 # using ./waf --enable-examples configure
 #
 ----------------------------------------
 Setting top to
-/home/jjun/Desktop/my_ns3/ns-3.27
+/home/jjun/Desktop/tf_ns3
 ----------------------------------------
 Setting out to
-/home/jjun/Desktop/my_ns3/ns-3.27/build
+/home/jjun/Desktop/tf_ns3/build
 ----------------------------------------
 Checking for 'gcc' (C compiler)
 find program=['gcc', 'cc'] paths=['/home/jjun/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/usr/local/cuda-10.0/bin'] var='CC' -> ['/usr/bin/gcc']
@@ -724,9 +724,9 @@ Checking for compilation flag -Wl,--soname=foo support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_4e3c65cb1dc9e9137e302d2e832b7cfc/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_000713bd528a8cf247e44c3da5c8a672/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-Wl,--soname=foo', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_4e3c65cb1dc9e9137e302d2e832b7cfc/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-Wl,--soname=foo', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_000713bd528a8cf247e44c3da5c8a672/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------
 Checking for program 'python'
@@ -829,12 +829,12 @@ int main(int argc, char **argv)
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_0d01c570d82e03d80aed7c65c72faeec/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_af5ee98f7b7814ea6ece531851b87453/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fno-strict-aliasing', '-fdebug-prefix-map=/build/python2.7-PPrPZj/python2.7-2.7.15=.', '-fstack-protector-strong', '-fwrapv', '-I/usr/include/python2.7', '-I/usr/include/x86_64-linux-gnu/python2.7', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-D_FORTIFY_SOURCE=2', '-DNDEBUG', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_0d01c570d82e03d80aed7c65c72faeec/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_0d01c570d82e03d80aed7c65c72faeec/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fno-strict-aliasing', '-fdebug-prefix-map=/build/python2.7-PPrPZj/python2.7-2.7.15=.', '-fstack-protector-strong', '-fwrapv', '-I/usr/include/python2.7', '-I/usr/include/x86_64-linux-gnu/python2.7', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-D_FORTIFY_SOURCE=2', '-DNDEBUG', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_af5ee98f7b7814ea6ece531851b87453/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_af5ee98f7b7814ea6ece531851b87453/testbuild/testprog[0m
 
-['/usr/bin/g++', '-Wl,--no-as-needed', '-Xlinker', '-export-dynamic', '-Wl,-O1', '-Wl,-Bsymbolic-functions', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_0d01c570d82e03d80aed7c65c72faeec/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib/python2.7/config-x86_64-linux-gnu', '-L/usr/lib', '-lpython2.7', '-lpthread', '-ldl', '-lutil', '-lm', '-ltensorflow_framework', '-ltensorflow_cc']
+['/usr/bin/g++', '-Wl,--no-as-needed', '-Xlinker', '-export-dynamic', '-Wl,-O1', '-Wl,-Bsymbolic-functions', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_af5ee98f7b7814ea6ece531851b87453/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib/python2.7/config-x86_64-linux-gnu', '-L/usr/lib', '-lpython2.7', '-lpthread', '-ldl', '-lutil', '-lm', '-ltensorflow_framework', '-ltensorflow_cc']
 yes
 ------------------------------------------------------------------
 Asking python-config for pyext '--cflags --libs --ldflags' flags
@@ -866,140 +866,51 @@ int main(int argc, char **argv)
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_2aa4b9553e0b39ba972ffef42b7fe333/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_3da659d3439d680038eda8877e935f8b/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fPIC', '-fno-strict-aliasing', '-fdebug-prefix-map=/build/python2.7-PPrPZj/python2.7-2.7.15=.', '-fstack-protector-strong', '-fwrapv', '-I/usr/include/python2.7', '-I/usr/include/x86_64-linux-gnu/python2.7', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-D_FORTIFY_SOURCE=2', '-DNDEBUG', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_2aa4b9553e0b39ba972ffef42b7fe333/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_2aa4b9553e0b39ba972ffef42b7fe333/testbuild/testprog.so[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fPIC', '-fno-strict-aliasing', '-fdebug-prefix-map=/build/python2.7-PPrPZj/python2.7-2.7.15=.', '-fstack-protector-strong', '-fwrapv', '-I/usr/include/python2.7', '-I/usr/include/x86_64-linux-gnu/python2.7', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-D_FORTIFY_SOURCE=2', '-DNDEBUG', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_3da659d3439d680038eda8877e935f8b/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_3da659d3439d680038eda8877e935f8b/testbuild/testprog.so[0m
 
-['/usr/bin/g++', '-Wl,--no-as-needed', '-shared', '-Xlinker', '-export-dynamic', '-Wl,-O1', '-Wl,-Bsymbolic-functions', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_2aa4b9553e0b39ba972ffef42b7fe333/testbuild/testprog.so', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib/python2.7/config-x86_64-linux-gnu', '-L/usr/lib', '-lpython2.7', '-lpthread', '-ldl', '-lutil', '-lm', '-ltensorflow_framework', '-ltensorflow_cc']
+['/usr/bin/g++', '-Wl,--no-as-needed', '-shared', '-Xlinker', '-export-dynamic', '-Wl,-O1', '-Wl,-Bsymbolic-functions', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_3da659d3439d680038eda8877e935f8b/testbuild/testprog.so', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib/python2.7/config-x86_64-linux-gnu', '-L/usr/lib', '-lpython2.7', '-lpthread', '-ldl', '-lutil', '-lm', '-ltensorflow_framework', '-ltensorflow_cc']
 yes
 ------------------------------------------------------------------
 Checking for compilation flag -fvisibility=hidden support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_4e3c65cb1dc9e9137e302d2e832b7cfc/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_000713bd528a8cf247e44c3da5c8a672/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fvisibility=hidden', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_4e3c65cb1dc9e9137e302d2e832b7cfc/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fvisibility=hidden', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_000713bd528a8cf247e44c3da5c8a672/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------------------
 Checking for compilation flag -Wno-array-bounds support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_4e3c65cb1dc9e9137e302d2e832b7cfc/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_000713bd528a8cf247e44c3da5c8a672/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-array-bounds', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_4e3c65cb1dc9e9137e302d2e832b7cfc/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-array-bounds', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_000713bd528a8cf247e44c3da5c8a672/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------------------
 Checking for pybindgen location
-../pybindgen-0.17.0.post58+ngcf00cc0 (guessed)
+not found
 ------------------------------------------------------------------
 Checking for python module 'pybindgen'
 ['/usr/bin/python', '-c', "\nimport pybindgen as current_module\nversion = getattr(current_module, '__version__', None)\nif version is not None:\n\tprint(str(version))\nelse:\n\tprint('unknown version')\n"]
-out: 0.17.0.post58+gcf00cc0
-
-0.17.0.post58+gcf00cc0
-------------------------------------------------------------------
-Checking for pybindgen version
-0.17.0.post58+gcf00cc0
-------------------------------------------------------------------
-Checking for code snippet
-==>
-
-#include <stdint.h>
-#include <vector>
-
-int main ()
-{
-   std::vector< uint64_t > t = std::vector< unsigned long > ();
-   return 0;
-}
-
-<==
-[1/1] Compiling [32mbuild/.conf_check_d53ae45191b6be0245881e27c98838d3/test.cpp[0m
-
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_d53ae45191b6be0245881e27c98838d3/testbuild/test.cpp.1.o']
-yes
-------------------------------------------------------------------
-Checking for types uint64_t and unsigned long equivalence
-no
-------------------------------------------------------------------
-Checking for code snippet
-==>
-
-#include <stdint.h>
-#include <vector>
-
-int main ()
-{
-   std::vector< uint64_t > t = std::vector< unsigned long long > ();
-   return 0;
-}
-
-<==
-[1/1] Compiling [32mbuild/.conf_check_d6b222ec729ad501289c4f55af620481/test.cpp[0m
-
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_d6b222ec729ad501289c4f55af620481/testbuild/test.cpp.1.o']
-err: ../test.cpp: In function ‘int main()’:
-../test.cpp:7:37: error: conversion from ‘std::vector<long long unsigned int>’ to non-scalar type ‘std::vector<long unsigned int>’ requested
-    std::vector< uint64_t > t = std::vector< unsigned long long > ();
-                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-from /home/jjun/Desktop/my_ns3/ns-3.27/bindings/python: Test does not build: Traceback (most recent call last):
-  File "/home/jjun/Desktop/my_ns3/ns-3.27/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Configure.py", line 335, in run_build
-    bld.compile()
-  File "/home/jjun/Desktop/my_ns3/ns-3.27/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Build.py", line 185, in compile
-    raise Errors.BuildError(self.producer.error)
-BuildError: Build failed
- -> task in 'testprog' failed (exit status 1): 
-	{task 139706910428176: cxx test.cpp -> test.cpp.1.o}
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_d6b222ec729ad501289c4f55af620481/testbuild/test.cpp.1.o']
-
-no
-from /home/jjun/Desktop/my_ns3/ns-3.27/bindings/python: The configuration failed
-------------------------------------------------------------------
-Checking for types uint64_t and unsigned long long equivalence
-yes
-------------------------------------------------------------------
-Checking for the apidefs that can be used for Python bindings
-gcc-LP64
-------------------------------------------------------------------
-Checking for internal GCC cxxabi
-==>
-
-# include <cxxabi.h>
-int main ()
-{
-   const abi::__si_class_type_info *_typeinfo  __attribute__((unused)) = NULL;
-   return 0;
-}
-
-<==
-[1/2] Compiling [32mbuild/.conf_check_46ca780f08de0c6afca64db11a656bae/test.cpp[0m
-
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_46ca780f08de0c6afca64db11a656bae/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_46ca780f08de0c6afca64db11a656bae/testbuild/testprog[0m
-
-['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_46ca780f08de0c6afca64db11a656bae/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
-complete
-------------------------------------------------------------------
-Checking for python module 'pygccxml'
-['/usr/bin/python', '-c', "\nimport pygccxml as current_module\nversion = getattr(current_module, '__version__', None)\nif version is not None:\n\tprint(str(version))\nelse:\n\tprint('unknown version')\n"]
 err: Traceback (most recent call last):
   File "<string>", line 2, in <module>
-ImportError: No module named pygccxml
+ImportError: No module named pybindgen
 
 not found
-from /home/jjun/Desktop/my_ns3/ns-3.27/bindings/python: Could not find the python module 'pygccxml'
+from /home/jjun/Desktop/tf_ns3/bindings/python: Could not find the python module 'pybindgen'
 ------------------------------------------------------------------
 Checking boost includes
 headers not found, please provide a --boost-includes argument (see help)
-from /home/jjun/Desktop/my_ns3/ns-3.27/src: The configuration failed
+from /home/jjun/Desktop/tf_ns3/src: The configuration failed
 ------------------------------------------------------------------
 Checking boost includes
 headers not found, please provide a --boost-includes argument (see help)
-from /home/jjun/Desktop/my_ns3/ns-3.27/src: The configuration failed
+from /home/jjun/Desktop/tf_ns3/src: The configuration failed
 ------------------------------------------------------------------
 Checking for click location
 not found
@@ -1011,12 +922,12 @@ find program=['pkg-config'] paths=['/home/jjun/.local/bin', '/usr/local/sbin', '
 Checking for 'gtk+-2.0' >= 2.12
 ['/usr/bin/pkg-config', '--atleast-version=2.12', 'gtk+-2.0']
 not found
-from /home/jjun/Desktop/my_ns3/ns-3.27/src/config-store: The configuration failed
+from /home/jjun/Desktop/tf_ns3/src/config-store: The configuration failed
 ------------------------------------------------------------------
 Checking for 'libxml-2.0' >= 2.7
 ['/usr/bin/pkg-config', '--atleast-version=2.7', 'libxml-2.0']
 not found
-from /home/jjun/Desktop/my_ns3/ns-3.27/src/config-store: The configuration failed
+from /home/jjun/Desktop/tf_ns3/src/config-store: The configuration failed
 ------------------------------------------------------------------
 Checking for type uint128_t
 ==>
@@ -1030,9 +941,9 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_b5bfdd437bd9ef8a116c7da3c81778d8/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_f88bc5b50e3f78c901a50482dc036a20/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_b5bfdd437bd9ef8a116c7da3c81778d8/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_f88bc5b50e3f78c901a50482dc036a20/testbuild/test.cpp.1.o']
 err: ../test.cpp: In function ‘int main(int, char**)’:
 ../test.cpp:5:7: error: ‘uint128_t’ was not declared in this scope
   if ((uint128_t *) 0) return 0;
@@ -1055,18 +966,18 @@ err: ../test.cpp: In function ‘int main(int, char**)’:
               ^~~~~~~~~
               uint32_t
 
-from /home/jjun/Desktop/my_ns3/ns-3.27/src/core: Test does not build: Traceback (most recent call last):
-  File "/home/jjun/Desktop/my_ns3/ns-3.27/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Configure.py", line 335, in run_build
+from /home/jjun/Desktop/tf_ns3/src/core: Test does not build: Traceback (most recent call last):
+  File "/home/jjun/Desktop/tf_ns3/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Configure.py", line 335, in run_build
     bld.compile()
-  File "/home/jjun/Desktop/my_ns3/ns-3.27/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Build.py", line 185, in compile
+  File "/home/jjun/Desktop/tf_ns3/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Build.py", line 185, in compile
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 139706910028240: cxx test.cpp -> test.cpp.1.o}
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_b5bfdd437bd9ef8a116c7da3c81778d8/testbuild/test.cpp.1.o']
+	{task 140608900008336: cxx test.cpp -> test.cpp.1.o}
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_f88bc5b50e3f78c901a50482dc036a20/testbuild/test.cpp.1.o']
 
 not found
-from /home/jjun/Desktop/my_ns3/ns-3.27/src/core: The configuration failed
+from /home/jjun/Desktop/tf_ns3/src/core: The configuration failed
 ------------------------------------------------------------------
 Checking for type __uint128_t
 ==>
@@ -1080,12 +991,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_939cd65e58d3fbb6459ade602e8d6c04/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_0256e0524f0e095a1b6834913b5facda/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_939cd65e58d3fbb6459ade602e8d6c04/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_939cd65e58d3fbb6459ade602e8d6c04/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_0256e0524f0e095a1b6834913b5facda/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_0256e0524f0e095a1b6834913b5facda/testbuild/testprog[0m
 
-['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_939cd65e58d3fbb6459ade602e8d6c04/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
+['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_0256e0524f0e095a1b6834913b5facda/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
 yes
 ------------------------------------------------------------------
 Checking high precision implementation
@@ -1101,12 +1012,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_8ef887fc8a4efe8a1902b5903447189b/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_cc5952f62ea39598cd26df01f27946a3/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_8ef887fc8a4efe8a1902b5903447189b/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_8ef887fc8a4efe8a1902b5903447189b/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_cc5952f62ea39598cd26df01f27946a3/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_cc5952f62ea39598cd26df01f27946a3/testbuild/testprog[0m
 
-['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_8ef887fc8a4efe8a1902b5903447189b/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
+['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_cc5952f62ea39598cd26df01f27946a3/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
 yes
 ------------------------------------------------------------------
 Checking for header inttypes.h
@@ -1119,12 +1030,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_f5e6879ade59f25392a1de582a41ddda/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_555a0b563529cbd14c66c38fe7707329/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_f5e6879ade59f25392a1de582a41ddda/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_f5e6879ade59f25392a1de582a41ddda/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_555a0b563529cbd14c66c38fe7707329/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_555a0b563529cbd14c66c38fe7707329/testbuild/testprog[0m
 
-['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_f5e6879ade59f25392a1de582a41ddda/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
+['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_555a0b563529cbd14c66c38fe7707329/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
 yes
 ------------------------------------------------------------------
 Checking for header sys/inttypes.h
@@ -1137,26 +1048,26 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_fd1fa69fd1f1290e69798c6aaee22e4c/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_b2a25e234e385279bd82db7336c664fa/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_fd1fa69fd1f1290e69798c6aaee22e4c/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_b2a25e234e385279bd82db7336c664fa/testbuild/test.cpp.1.o']
 err: ../test.cpp:1:10: fatal error: sys/inttypes.h: No such file or directory
  #include <sys/inttypes.h>
           ^~~~~~~~~~~~~~~~
 compilation terminated.
 
-from /home/jjun/Desktop/my_ns3/ns-3.27/src/core: Test does not build: Traceback (most recent call last):
-  File "/home/jjun/Desktop/my_ns3/ns-3.27/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Configure.py", line 335, in run_build
+from /home/jjun/Desktop/tf_ns3/src/core: Test does not build: Traceback (most recent call last):
+  File "/home/jjun/Desktop/tf_ns3/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Configure.py", line 335, in run_build
     bld.compile()
-  File "/home/jjun/Desktop/my_ns3/ns-3.27/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Build.py", line 185, in compile
+  File "/home/jjun/Desktop/tf_ns3/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Build.py", line 185, in compile
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 139706910028176: cxx test.cpp -> test.cpp.1.o}
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_fd1fa69fd1f1290e69798c6aaee22e4c/testbuild/test.cpp.1.o']
+	{task 140608899544528: cxx test.cpp -> test.cpp.1.o}
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_b2a25e234e385279bd82db7336c664fa/testbuild/test.cpp.1.o']
 
 not found
-from /home/jjun/Desktop/my_ns3/ns-3.27/src/core: The configuration failed
+from /home/jjun/Desktop/tf_ns3/src/core: The configuration failed
 ------------------------------------------------------------------
 Checking for header sys/types.h
 ==>
@@ -1168,12 +1079,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_e9a97c7d381b32d814b9fc8b0766b064/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_1f5dbbcd47b54c520b915f2ec34a0dea/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_e9a97c7d381b32d814b9fc8b0766b064/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_e9a97c7d381b32d814b9fc8b0766b064/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_1f5dbbcd47b54c520b915f2ec34a0dea/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_1f5dbbcd47b54c520b915f2ec34a0dea/testbuild/testprog[0m
 
-['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_e9a97c7d381b32d814b9fc8b0766b064/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
+['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_1f5dbbcd47b54c520b915f2ec34a0dea/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
 yes
 ------------------------------------------------------------------
 Checking for header sys/stat.h
@@ -1186,12 +1097,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_fc64751289badfec26f3871f29065808/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_475e2a0f617912e43df96c84f1a3fe09/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_fc64751289badfec26f3871f29065808/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_fc64751289badfec26f3871f29065808/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_475e2a0f617912e43df96c84f1a3fe09/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_475e2a0f617912e43df96c84f1a3fe09/testbuild/testprog[0m
 
-['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_fc64751289badfec26f3871f29065808/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
+['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_475e2a0f617912e43df96c84f1a3fe09/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
 yes
 ------------------------------------------------------------------
 Checking for header dirent.h
@@ -1204,12 +1115,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_b67d0a9c75517bb2fd9489d531db03ce/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_879a542423cfce731560987fc029250c/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_b67d0a9c75517bb2fd9489d531db03ce/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_b67d0a9c75517bb2fd9489d531db03ce/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_879a542423cfce731560987fc029250c/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_879a542423cfce731560987fc029250c/testbuild/testprog[0m
 
-['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_b67d0a9c75517bb2fd9489d531db03ce/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
+['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_879a542423cfce731560987fc029250c/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
 yes
 ------------------------------------------------------------------
 Checking for header stdlib.h
@@ -1222,12 +1133,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_99858d5359533843e4f8dbb420a71553/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_10f5ccd4840c15d9617c48b4e6d2498f/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_99858d5359533843e4f8dbb420a71553/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_99858d5359533843e4f8dbb420a71553/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_10f5ccd4840c15d9617c48b4e6d2498f/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_10f5ccd4840c15d9617c48b4e6d2498f/testbuild/testprog[0m
 
-['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_99858d5359533843e4f8dbb420a71553/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
+['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_10f5ccd4840c15d9617c48b4e6d2498f/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
 yes
 ------------------------------------------------------------------
 Checking for header signal.h
@@ -1240,12 +1151,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_5f6cc51dfc96fa1b7865a14bdbfa72ca/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_62e3f5a0d9bcbf00177573b88374d41f/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_5f6cc51dfc96fa1b7865a14bdbfa72ca/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_5f6cc51dfc96fa1b7865a14bdbfa72ca/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_62e3f5a0d9bcbf00177573b88374d41f/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_62e3f5a0d9bcbf00177573b88374d41f/testbuild/testprog[0m
 
-['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_5f6cc51dfc96fa1b7865a14bdbfa72ca/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
+['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_62e3f5a0d9bcbf00177573b88374d41f/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
 yes
 ------------------------------------------------------------------
 Checking for header pthread.h
@@ -1260,12 +1171,12 @@ int main ()
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_3efda2d4b8dd8fc78e72dc12dabb28b7/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_fc3100815316c383dbdb93a7f0a7785c/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_3efda2d4b8dd8fc78e72dc12dabb28b7/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_3efda2d4b8dd8fc78e72dc12dabb28b7/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_fc3100815316c383dbdb93a7f0a7785c/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_fc3100815316c383dbdb93a7f0a7785c/testbuild/testprog[0m
 
-['/usr/bin/g++', '-Wl,--no-as-needed', '-pthread', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_3efda2d4b8dd8fc78e72dc12dabb28b7/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
+['/usr/bin/g++', '-Wl,--no-as-needed', '-pthread', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_fc3100815316c383dbdb93a7f0a7785c/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
 yes
 ------------------------------------------------------------------
 Checking for header stdint.h
@@ -1278,12 +1189,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_8ef887fc8a4efe8a1902b5903447189b/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_cc5952f62ea39598cd26df01f27946a3/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_8ef887fc8a4efe8a1902b5903447189b/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_8ef887fc8a4efe8a1902b5903447189b/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_cc5952f62ea39598cd26df01f27946a3/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_cc5952f62ea39598cd26df01f27946a3/testbuild/testprog[0m
 
-['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_8ef887fc8a4efe8a1902b5903447189b/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
+['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_cc5952f62ea39598cd26df01f27946a3/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
 yes
 ------------------------------------------------------------------
 Checking for header inttypes.h
@@ -1296,12 +1207,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_f5e6879ade59f25392a1de582a41ddda/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_555a0b563529cbd14c66c38fe7707329/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_f5e6879ade59f25392a1de582a41ddda/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_f5e6879ade59f25392a1de582a41ddda/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_555a0b563529cbd14c66c38fe7707329/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_555a0b563529cbd14c66c38fe7707329/testbuild/testprog[0m
 
-['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_f5e6879ade59f25392a1de582a41ddda/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
+['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_555a0b563529cbd14c66c38fe7707329/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
 yes
 ------------------------------------------------------------------
 Checking for header sys/inttypes.h
@@ -1314,26 +1225,26 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_fd1fa69fd1f1290e69798c6aaee22e4c/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_b2a25e234e385279bd82db7336c664fa/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_fd1fa69fd1f1290e69798c6aaee22e4c/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_b2a25e234e385279bd82db7336c664fa/testbuild/test.cpp.1.o']
 err: ../test.cpp:1:10: fatal error: sys/inttypes.h: No such file or directory
  #include <sys/inttypes.h>
           ^~~~~~~~~~~~~~~~
 compilation terminated.
 
-from /home/jjun/Desktop/my_ns3/ns-3.27/src/core: Test does not build: Traceback (most recent call last):
-  File "/home/jjun/Desktop/my_ns3/ns-3.27/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Configure.py", line 335, in run_build
+from /home/jjun/Desktop/tf_ns3/src/core: Test does not build: Traceback (most recent call last):
+  File "/home/jjun/Desktop/tf_ns3/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Configure.py", line 335, in run_build
     bld.compile()
-  File "/home/jjun/Desktop/my_ns3/ns-3.27/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Build.py", line 185, in compile
+  File "/home/jjun/Desktop/tf_ns3/.waf-1.8.19-b1fc8f7baef51bd2db4c2971909a568d/waflib/Build.py", line 185, in compile
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 139706910337744: cxx test.cpp -> test.cpp.1.o}
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_fd1fa69fd1f1290e69798c6aaee22e4c/testbuild/test.cpp.1.o']
+	{task 140608899504144: cxx test.cpp -> test.cpp.1.o}
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_b2a25e234e385279bd82db7336c664fa/testbuild/test.cpp.1.o']
 
 not found
-from /home/jjun/Desktop/my_ns3/ns-3.27/src/core: The configuration failed
+from /home/jjun/Desktop/tf_ns3/src/core: The configuration failed
 ------------------------------------------------------------------
 Checking for library rt
 ==>
@@ -1344,12 +1255,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_aae6a557586e0762fbfda4dc6b9f7d44/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_93a56a34afd078e76532aca90a7f7dd7/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_aae6a557586e0762fbfda4dc6b9f7d44/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_aae6a557586e0762fbfda4dc6b9f7d44/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_93a56a34afd078e76532aca90a7f7dd7/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_93a56a34afd078e76532aca90a7f7dd7/testbuild/testprog[0m
 
-['/usr/bin/g++', '-Wl,--no-as-needed', '-pthread', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_aae6a557586e0762fbfda4dc6b9f7d44/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lrt', '-ltensorflow_framework', '-ltensorflow_cc']
+['/usr/bin/g++', '-Wl,--no-as-needed', '-pthread', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_93a56a34afd078e76532aca90a7f7dd7/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lrt', '-ltensorflow_framework', '-ltensorflow_cc']
 yes
 ------------------------------------------------------------------
 Checking for header sys/ioctl.h
@@ -1362,12 +1273,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_89af8d38d884dc21d671e6254ce2a2a2/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_25f883d2c253e47c30bbe826987e371b/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_89af8d38d884dc21d671e6254ce2a2a2/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_89af8d38d884dc21d671e6254ce2a2a2/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_25f883d2c253e47c30bbe826987e371b/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_25f883d2c253e47c30bbe826987e371b/testbuild/testprog[0m
 
-['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_89af8d38d884dc21d671e6254ce2a2a2/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
+['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_25f883d2c253e47c30bbe826987e371b/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
 yes
 ------------------------------------------------------------------
 Checking for header net/if.h
@@ -1380,12 +1291,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_b827801558b57a9e2171287d58ff3c00/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_38667751b25b988f502c2abe6efb9e76/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_b827801558b57a9e2171287d58ff3c00/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_b827801558b57a9e2171287d58ff3c00/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_38667751b25b988f502c2abe6efb9e76/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_38667751b25b988f502c2abe6efb9e76/testbuild/testprog[0m
 
-['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_b827801558b57a9e2171287d58ff3c00/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
+['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_38667751b25b988f502c2abe6efb9e76/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
 yes
 ------------------------------------------------------------------
 Checking for header net/ethernet.h
@@ -1398,12 +1309,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_96b0c2dc035c23e24ce81c5d55998f27/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_0c30f1d45518615908e2318d31a29643/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_96b0c2dc035c23e24ce81c5d55998f27/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_96b0c2dc035c23e24ce81c5d55998f27/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_0c30f1d45518615908e2318d31a29643/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_0c30f1d45518615908e2318d31a29643/testbuild/testprog[0m
 
-['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_96b0c2dc035c23e24ce81c5d55998f27/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
+['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_0c30f1d45518615908e2318d31a29643/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
 yes
 ------------------------------------------------------------------
 Checking for header linux/if_tun.h
@@ -1416,12 +1327,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_3bc61e20cf23c029ed247b959a40b09d/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_41bb9e37857997751062412110179562/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_3bc61e20cf23c029ed247b959a40b09d/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_3bc61e20cf23c029ed247b959a40b09d/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_41bb9e37857997751062412110179562/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_41bb9e37857997751062412110179562/testbuild/testprog[0m
 
-['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_3bc61e20cf23c029ed247b959a40b09d/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
+['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_41bb9e37857997751062412110179562/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
 yes
 ------------------------------------------------------------------
 Checking for header netpacket/packet.h
@@ -1434,12 +1345,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_9ee3306c0280741d2bf2a210582e98ca/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_a501a24cdefb64fb92e8f83af3369996/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_9ee3306c0280741d2bf2a210582e98ca/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_9ee3306c0280741d2bf2a210582e98ca/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_a501a24cdefb64fb92e8f83af3369996/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_a501a24cdefb64fb92e8f83af3369996/testbuild/testprog[0m
 
-['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_9ee3306c0280741d2bf2a210582e98ca/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
+['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_a501a24cdefb64fb92e8f83af3369996/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
 yes
 ------------------------------------------------------------------
 Checking for NSC location
@@ -1453,7 +1364,7 @@ to the PKG_CONFIG_PATH environment variable
 No package 'sqlite3' found
 
 not found
-from /home/jjun/Desktop/my_ns3/ns-3.27/src/stats: The configuration failed
+from /home/jjun/Desktop/tf_ns3/src/stats: The configuration failed
 ------------------------------------------------------------------
 Checking for header linux/if_tun.h
 ==>
@@ -1465,49 +1376,22 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_3bc61e20cf23c029ed247b959a40b09d/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_41bb9e37857997751062412110179562/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_3bc61e20cf23c029ed247b959a40b09d/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_3bc61e20cf23c029ed247b959a40b09d/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_41bb9e37857997751062412110179562/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_41bb9e37857997751062412110179562/testbuild/testprog[0m
 
-['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_3bc61e20cf23c029ed247b959a40b09d/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
+['/usr/bin/g++', '-Wl,--no-as-needed', 'test.cpp.1.o', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_41bb9e37857997751062412110179562/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ltensorflow_framework', '-ltensorflow_cc']
 yes
-------------------------------------------------------------------
-Checking for python module 'gtk'
-['/usr/bin/python', '-c', "\nimport gtk as current_module\nversion = getattr(current_module, '__version__', None)\nif version is not None:\n\tprint(str(version))\nelse:\n\tprint('unknown version')\n"]
-err: Traceback (most recent call last):
-  File "<string>", line 2, in <module>
-ImportError: No module named gtk
-
-not found
-from /home/jjun/Desktop/my_ns3/ns-3.27/src/visualizer: Could not find the python module 'gtk'
-------------------------------------------------------------------
-Checking for python module 'goocanvas'
-['/usr/bin/python', '-c', "\nimport goocanvas as current_module\nversion = getattr(current_module, '__version__', None)\nif version is not None:\n\tprint(str(version))\nelse:\n\tprint('unknown version')\n"]
-err: Traceback (most recent call last):
-  File "<string>", line 2, in <module>
-ImportError: No module named goocanvas
-
-not found
-from /home/jjun/Desktop/my_ns3/ns-3.27/src/visualizer: Could not find the python module 'goocanvas'
-------------------------------------------------------------------
-Checking for python module 'pygraphviz'
-['/usr/bin/python', '-c', "\nimport pygraphviz as current_module\nversion = getattr(current_module, '__version__', None)\nif version is not None:\n\tprint(str(version))\nelse:\n\tprint('unknown version')\n"]
-err: Traceback (most recent call last):
-  File "<string>", line 2, in <module>
-ImportError: No module named pygraphviz
-
-not found
-from /home/jjun/Desktop/my_ns3/ns-3.27/src/visualizer: Could not find the python module 'pygraphviz'
 (tool boost is already loaded, skipping)
 ------------------------------------------------------------------
 Checking boost includes
 headers not found, please provide a --boost-includes argument (see help)
-from /home/jjun/Desktop/my_ns3/ns-3.27/contrib: The configuration failed
+from /home/jjun/Desktop/tf_ns3/contrib: The configuration failed
 ------------------------------------------------------------------
 Checking boost includes
 headers not found, please provide a --boost-includes argument (see help)
-from /home/jjun/Desktop/my_ns3/ns-3.27/contrib: The configuration failed
+from /home/jjun/Desktop/tf_ns3/contrib: The configuration failed
 ------------------------------------------------------------------
 Checking for program 'sudo'
 /usr/bin/sudo
@@ -1516,7 +1400,7 @@ find program=['sudo'] paths=['/home/jjun/.local/bin', '/usr/local/sbin', '/usr/l
 Checking for program 'valgrind'
 not found
 find program=['valgrind'] paths=['/home/jjun/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/usr/local/cuda-10.0/bin'] var='VALGRIND' -> None
-from /home/jjun/Desktop/my_ns3/ns-3.27: Could not find the program ['valgrind']
+from /home/jjun/Desktop/tf_ns3: Could not find the program ['valgrind']
 ------------------------------------------------------------------
 Checking for 'gsl'
 ['/usr/bin/pkg-config', '--cflags', '--libs', 'gsl']
@@ -1526,68 +1410,68 @@ to the PKG_CONFIG_PATH environment variable
 No package 'gsl' found
 
 not found
-from /home/jjun/Desktop/my_ns3/ns-3.27: The configuration failed
+from /home/jjun/Desktop/tf_ns3: The configuration failed
 ------------------------------------------------------------------
 python-config
 not found
 find program=['libgcrypt-config'] paths=['/home/jjun/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/usr/local/cuda-10.0/bin'] var='LIBGCRYPT_CONFIG' -> None
-from /home/jjun/Desktop/my_ns3/ns-3.27: Could not find the program ['libgcrypt-config']
+from /home/jjun/Desktop/tf_ns3: Could not find the program ['libgcrypt-config']
 ------------------------------------------------------------------
 Checking for compilation flag -Wno-error=deprecated-d... support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_4e3c65cb1dc9e9137e302d2e832b7cfc/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_000713bd528a8cf247e44c3da5c8a672/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-error=deprecated-declarations', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_4e3c65cb1dc9e9137e302d2e832b7cfc/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-error=deprecated-declarations', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_000713bd528a8cf247e44c3da5c8a672/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------------------
 Checking for compilation flag -Wno-error=deprecated-d... support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_f60b4370c0512bc6afd0096062d3a4e3/test.c[0m
+[1/1] Compiling [32mbuild/.conf_check_01f6d754eccaed452fe7757e5e8ba3dc/test.c[0m
 
-['/usr/bin/gcc', '-Wno-error=deprecated-declarations', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_f60b4370c0512bc6afd0096062d3a4e3/testbuild/test.c.1.o']
+['/usr/bin/gcc', '-Wno-error=deprecated-declarations', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_01f6d754eccaed452fe7757e5e8ba3dc/testbuild/test.c.1.o']
 ok
 ------------------------------------------------------------------
 Checking for compilation flag -fstrict-aliasing support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_4e3c65cb1dc9e9137e302d2e832b7cfc/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_000713bd528a8cf247e44c3da5c8a672/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-error=deprecated-declarations', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_4e3c65cb1dc9e9137e302d2e832b7cfc/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-error=deprecated-declarations', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_000713bd528a8cf247e44c3da5c8a672/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------------------
 Checking for compilation flag -fstrict-aliasing support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_f60b4370c0512bc6afd0096062d3a4e3/test.c[0m
+[1/1] Compiling [32mbuild/.conf_check_01f6d754eccaed452fe7757e5e8ba3dc/test.c[0m
 
-['/usr/bin/gcc', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_f60b4370c0512bc6afd0096062d3a4e3/testbuild/test.c.1.o']
+['/usr/bin/gcc', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_01f6d754eccaed452fe7757e5e8ba3dc/testbuild/test.c.1.o']
 ok
 ------------------------------------------------------------------
 Checking for compilation flag -Wstrict-aliasing support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_4e3c65cb1dc9e9137e302d2e832b7cfc/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_000713bd528a8cf247e44c3da5c8a672/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-error=deprecated-declarations', '-fstrict-aliasing', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_4e3c65cb1dc9e9137e302d2e832b7cfc/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-error=deprecated-declarations', '-fstrict-aliasing', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_000713bd528a8cf247e44c3da5c8a672/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------------------
 Checking for compilation flag -Wstrict-aliasing support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_f60b4370c0512bc6afd0096062d3a4e3/test.c[0m
+[1/1] Compiling [32mbuild/.conf_check_01f6d754eccaed452fe7757e5e8ba3dc/test.c[0m
 
-['/usr/bin/gcc', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o', '/home/jjun/Desktop/my_ns3/ns-3.27/build/.conf_check_f60b4370c0512bc6afd0096062d3a4e3/testbuild/test.c.1.o']
+['/usr/bin/gcc', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o', '/home/jjun/Desktop/tf_ns3/build/.conf_check_01f6d754eccaed452fe7757e5e8ba3dc/testbuild/test.c.1.o']
 ok
 ------------------------------------------------------------------
 Checking for program 'doxygen'
 not found
 find program=['doxygen'] paths=['/home/jjun/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/usr/local/cuda-10.0/bin'] var='DOXYGEN' -> None
-from /home/jjun/Desktop/my_ns3/ns-3.27: Could not find the program ['doxygen']
+from /home/jjun/Desktop/tf_ns3: Could not find the program ['doxygen']

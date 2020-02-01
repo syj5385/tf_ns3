@@ -383,6 +383,7 @@ def build(bld):
         'model/tcp-scalable.h',
         'model/tcp-veno.h',
         'model/tcp-bic.h',
+        'model/dqn_model.h',
         'model/tcp-yeah.h',
         'model/tcp-illinois.h',
         'model/tcp-htcp.h',

@@ -11,6 +11,7 @@
 #include "arp-header.h"
 #include "arp-l3-protocol.h"
 #include "candidate-queue.h"
+#include "dqn_model.h"
 #include "global-route-manager-impl.h"
 #include "global-route-manager.h"
 #include "global-router-interface.h"

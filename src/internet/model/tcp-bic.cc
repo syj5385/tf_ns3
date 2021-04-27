@@ -327,7 +327,6 @@ void TcpBic::CCA_train(Ptr<TcpSocketState> tcb, const Time& rtt, DQN_model model
 void TcpBic::PktsAcked (Ptr<TcpSocketState> tcb, uint32_t segmentsAcked, const Time& rtt)
 {
 	Time now = Simulator::Now();
-
 	if(now.GetMilliSeconds() - lastTrainTime.GetMilliSeconds() > trainTime_ms ){
 
 		uint32_t iter = step / max_step_in_one_episode;
@@ -371,7 +370,6 @@ void TcpBic::PktsAcked (Ptr<TcpSocketState> tcb, uint32_t segmentsAcked, const T
 				if(writeFile.is_open()){
 					writeFile << (((maxTxtmp - lastTx) *  8 / 1000) * 1000 / trainTime_ms) << "\n";
 				}
-
 				vector<vector<float>> input, input_new;
 				input.push_back(model.GetCstate());
 				input_new.push_back(model.GetPstate());
@@ -381,9 +379,8 @@ void TcpBic::PktsAcked (Ptr<TcpSocketState> tcb, uint32_t segmentsAcked, const T
 				output_new = model.Predict(input_new);
 
 				cout << "State " << model.GetPstate()[0] << "\t: [";
-				for(uint32_t i=0; i<model.GetOutputSize(); i++){
+				for(uint32_t i=0; i<model.GetOutputSize(); i++)
 					cout << output[0][i] << ",";
-				}
 				cout << "]\n";
 
 				cout << "State " << model.GetCstate()[0] << "\t: [";
@@ -399,10 +396,8 @@ void TcpBic::PktsAcked (Ptr<TcpSocketState> tcb, uint32_t segmentsAcked, const T
 
 				for(uint32_t i=0; i<t_set.size(); i++)
 					delete t_set[i];
-
 				t_set.clear();
 				t_set.resize(0);
-
 			}
 			lastTx = maxTxtmp ;
 			Uprev = U;
@@ -412,7 +407,6 @@ void TcpBic::PktsAcked (Ptr<TcpSocketState> tcb, uint32_t segmentsAcked, const T
 			lastTx = tcb -> m_highTxMark;
 
 			/* Calculate reward */
-
 			Uprev = 0;
 		}
 
@@ -430,19 +424,15 @@ void TcpBic::PktsAcked (Ptr<TcpSocketState> tcb, uint32_t segmentsAcked, const T
 			model.SetAction(model.argmax(model.Predict(input)[0]));
 		}
 
-		cout << "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n";
 		switch(model.GetAction()){
-		case CWND_UP :
-			tcb -> m_cWnd += (3*tcb -> m_segmentSize);
-			break;
+			case CWND_UP :
+				tcb -> m_cWnd += (3*tcb -> m_segmentSize);
+				break;
 
-		case CWND_DOWN :
-			tcb -> m_cWnd -= (2*tcb -> m_segmentSize);
-			break;
-
+			case CWND_DOWN :
+				tcb -> m_cWnd -= (2*tcb -> m_segmentSize);
+				break;
 		}
-
-
 		/* Update step counter */
 		step++;
 		if(step > (max_step_in_one_episode * max_episode)){
@@ -451,10 +441,8 @@ void TcpBic::PktsAcked (Ptr<TcpSocketState> tcb, uint32_t segmentsAcked, const T
 			cout << "Store Checkpoint\n";
 			model.Checkpoint(checkpoint_prefix);
 		}
-
 		lastTrainTime = now;
 	}
-
 	if(tcb -> m_highTxMark > maxTxtmp){
 		maxTxtmp = tcb -> m_highTxMark;
 	}

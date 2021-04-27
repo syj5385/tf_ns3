@@ -94,7 +94,6 @@ uint32_t TrainingSet::GetDone(){
 
 DQN_model::DQN_model(const string& graph_def_filename, uint32_t input_size, uint32_t output_size, float discount_factor)
 {
-
 	NS_LOG_UNCOND ("Initialize DQN model [" << input_size << " ==> [Hidden Layer] ==> " << output_size << "]\n");
 
 	this -> input_size = input_size;
@@ -117,7 +116,6 @@ DQN_model::DQN_model(const string& graph_def_filename, uint32_t input_size, uint
 	    std::cout << "Restoring model weights from checkpoint\n";
 	    Restore(checkpoint_prefix);
 	}
-
 }
 
 void DQN_model::Init(){
